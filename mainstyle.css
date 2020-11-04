@@ -450,3 +450,9 @@ main {
 #profile dd {
   margin-left: 80px;
 }
+
+footer{
+  color: #fff;
+  font-size: 10pt;
+  padding: 30px;
+}
