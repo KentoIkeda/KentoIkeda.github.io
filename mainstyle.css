@@ -90,6 +90,7 @@ nav a:hover {
   /* referring directly to the animation's @keyframe declaration */
   animation-duration: .5s;
   /* don't forget to set a duration! */
+  cursor: pointer;
 }
 
 main {
