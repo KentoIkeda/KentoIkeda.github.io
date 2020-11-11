@@ -1,3 +1,13 @@
+window.onload = function(){
+  setTimeout(() => {
+    document.getElementsByTagName("nav")[0].style.display = "block";
+  }, 100)
+  setTimeout(() => {
+    document.getElementById("main").style.display = "block";
+    document.getElementsByTagName("footer")[0].style.display = "block";
+  }, 1500)
+}
+
 var zikkou1 = 0;
 var zikkou2 = 0;
 
