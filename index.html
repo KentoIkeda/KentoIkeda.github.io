@@ -9,7 +9,7 @@
     <title>unlimited my works | Kento Ikeda</title>
   </head>
   <body>
-    <video id="bgvid" playsinline autoplay muted loop>
+    <video id="bgvid" playsinline autoplay muted loop class="animate__animated animate__fadeIn">
       <source src="img/video.mp4" type="video/mp4">
     </video>
     <nav class="animate__animated animate__fadeInLeft">
@@ -18,7 +18,7 @@
       <a href="mailto:kento.windows10@gmail.com" class="">CONTACT</a>
     </nav>
     <main id="main">
-      <a onclick="show1(); slideshow_run1();" class="card_a">
+      <a onclick="show(1); slideshow_run1();" class="card_a">
         <div class="animate__animated animate__fadeInUp card">
           <div class="card_inner ci1">
             <h1>
@@ -27,7 +27,7 @@
           </div>
         </div>
       </a>
-      <a onclick="show2(); slideshow_run2();" class="card_a">
+      <a onclick="show(2); slideshow_run2();" class="card_a">
         <div class="animate__animated animate__fadeInUp card">
           <div class="card_inner ci2">
             <h1>
@@ -36,7 +36,7 @@
           </div>
         </div>
       </a>
-      <a onclick="show3();" class="card_a">
+      <a onclick="show(3);" class="card_a">
         <div class="animate__animated animate__fadeInUp card">
           <div class="card_inner ci3">
             <h1>
@@ -45,7 +45,7 @@
           </div>
         </div>
       </a>
-      <a onclick="show4();" class="card_a">
+      <a onclick="show(4);" class="card_a">
         <div class="animate__animated animate__fadeInUp card">
           <div class="card_inner ci4">
             <h1>
@@ -54,7 +54,7 @@
           </div>
         </div>
       </a>
-      <a onclick="show5();" class="card_a">
+      <a onclick="show(5);" class="card_a">
         <div class="animate__animated animate__fadeInUp card">
           <div class="card_inner ci5">
             <h1>
@@ -63,7 +63,7 @@
           </div>
         </div>
       </a>
-      <a onclick="show6();" class="card_a">
+      <a onclick="show(6);" class="card_a">
         <div class="animate__animated animate__fadeInUp card">
           <div class="card_inner ci6">
             <h1>
@@ -72,7 +72,7 @@
           </div>
         </div>
       </a>
-      <a onclick="show8();" class="card_a">
+      <a onclick="show(8);" class="card_a">
         <div class="animate__animated animate__fadeInUp card">
           <div class="card_inner ci8">
             <h1>
@@ -81,7 +81,7 @@
           </div>
         </div>
       </a>
-      <a onclick="show9();" class="card_a">
+      <a onclick="show(9);" class="card_a">
         <div class="animate__animated animate__fadeInUp card">
           <div class="card_inner ci9">
             <h1>
@@ -155,7 +155,7 @@
       </p>
     </main>
     <section id="modal1" class="modalwindow animate__animated animate__zoomIn">
-      <button onclick="hide1();" class="closedicon">
+      <button onclick="hide(1);" class="closedicon">
         <span>閉じる</span>
       </button>
       <div class="swiper-container swiper1">
@@ -203,7 +203,7 @@
       </p>
     </section>
     <section id="modal2" class="modalwindow animate__animated animate__zoomIn">
-      <button onclick="hide2();" class="closedicon">
+      <button onclick="hide(2);" class="closedicon">
         <span>閉じる</span>
       </button>
       <div class="swiper-container swiper2">
@@ -263,7 +263,7 @@
       </p>
     </section>
     <section id="modal3" class="modalwindow animate__animated animate__zoomIn">
-      <button onclick="hide3();" class="closedicon">
+      <button onclick="hide(3);" class="closedicon">
         <span>閉じる</span>
       </button>
       <h1>MOVIE</h1>
@@ -287,7 +287,7 @@
       </p>
     </section>
     <section id="modal4" class="modalwindow animate__animated animate__zoomIn">
-      <button onclick="hide4();" class="closedicon">
+      <button onclick="hide(4);" class="closedicon">
         <span>閉じる</span>
       </button>
       <h1>INFOMATION</h1>
@@ -305,25 +305,25 @@
       <p class="caution">※サンプル写真に置き換えた物で閲覧できるように調整中です。</p>
     </section>
     <section id="modal5" class="modalwindow animate__animated animate__zoomIn">
-      <button onclick="hide5();" class="closedicon">
+      <button onclick="hide(5);" class="closedicon">
         <span>閉じる</span>
       </button>
       <img src="img/pic/pic_ikeda.jpg" width="100%">
     </section>
     <section id="modal6" class="modalwindow animate__animated animate__zoomIn">
-      <button onclick="hide6();" class="closedicon">
+      <button onclick="hide(6);" class="closedicon">
         <span>閉じる</span>
       </button>
       <img src="img/pic/pic_fes.jpg" width="100%">
     </section>
     <section id="modal8" class="modalwindow animate__animated animate__zoomIn">
-      <button onclick="hide8();" class="closedicon">
+      <button onclick="hide(8);" class="closedicon">
         <span>閉じる</span>
       </button>
       <img src="img/pic/pic_poster.png" width="100%">
     </section>
     <section id="modal9" class="modalwindow animate__animated animate__zoomIn">
-      <button onclick="hide9();" class="closedicon">
+      <button onclick="hide(9);" class="closedicon">
         <span>閉じる</span>
       </button>
       <h1>INFOMATION</h1>

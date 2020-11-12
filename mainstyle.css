@@ -12,6 +12,10 @@
   --animate-duration: 1s;
 }
 
+.animate__animated.animate__fadeIn {
+  --animate-duration: 2s;
+}
+
 .animate__animated.animate__zoomIn {
   --animate-duration: 1s;
 }
@@ -59,7 +63,7 @@ video {
   background: url('') no-repeat;
   background-size: cover;
   transition: 1s opacity;
-  opacity: 0.7;
+  filter:opacity(50%);
 }
 
 body {
