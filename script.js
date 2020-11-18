@@ -68,11 +68,15 @@ function pro(){
 }
 
 function show(num){
-  var e = document.getElementById("modal" + num)
-  e.style.display = "block"
+  var e = document.getElementById("modal" + num);
+  e.style.display = "block";
+  var m = document.getElementsByTagName("body")[0];
+  m.style.overflow = "hidden";
 }
 
 function hide(num) {
+  var m = document.getElementsByTagName("body")[0];
+  m.style.overflow = "visible";
   var f = document.getElementById("modal" + num);
   f.classList.remove('animate__zoomIn');
   f.classList.add('animate__zoomOut');

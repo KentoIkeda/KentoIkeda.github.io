@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Comfortaa:wght@300;400;500;600;700&family=EB+Garamond&family=M+PLUS+1p:wght@100;300;400;500;700;800;900&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Sawarabi+Mincho&display=swap');
+
+/* This only changes this particular animation duration */
+.animate__animated.animate__fadeInLeft {
+  --animate-duration: 2s;
+}
+
+.animate__animated.animate__fadeInUp {
+  --animate-duration: 1s;
+}
+
+.animate__animated.animate__fadeIn {
+  --animate-duration: 2s;
+}
+
+.animate__animated.animate__zoomIn {
+  --animate-duration: 1s;
+}
+
+.animate__animated.animate__zoomOut {
+  --animate-duration: 1s;
+}
+
+.animate__animated.animate__jackInTheBox {
+  --animate-duration: 2s;
+}
+
+/* This changes all the animations globally */
+:root {
+  --animate-duration: 800ms;
+  --animate-delay: 0.9s;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+div,
+section,
+nav,
+aside,
+header,
+footer {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'M PLUS 1p', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.modalwindow {
+  color: #ddd;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+  position: fixed;
+  padding: 25px;
+  z-index: 100;
+  box-sizing: border-box;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQYV2NgYGA4AwAA0QDNBM8lCQAAAABJRU5ErkJggg=='), url('img/modal_bg.png');
+  background-repeat: repeat.no-repeat;
+  background-position: top left, center center;
+  background-size: auto, cover;
+}
+
+.modalwindow .swiper-container {
+  text-align: center;
+}
+
+.modalwindow .swiper-container2 {
+  text-align: center;
+}
+
+.modalwindow .swiper-container .swiper-slide img {
+  max-width: 100%;
+  height: auto;
+}
+
+.swiper-container2 .swiper-slide img {
+  max-width: 100%;
+  height: auto;
+}
+
+.modalwindow h1 {
+  font-size: 20pt;
+  font-family: 'Comfortaa', cursive;
+  font-weight: normal;
+  line-height: 40pt;
+  letter-spacing: 3px;
+  text-align: left;
+}
+
+.modalwindow h1:nth-of-type(2){
+  margin-top: 15px;
+}
+
+.modalwindow .frameouter {
+  height: 100%;
+}
+
+.modalwindow .frameouter iframe {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: block;
+}
+
+.modalwindow::-webkit-scrollbar {
+  width: 10px;
+}
+
+.modalwindow::-webkit-scrollbar-track {
+  background: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: inset 0 0 2px #777;
+}
+
+.modalwindow::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+  box-shadow: none;
+}
+
+.modalwindow .closedicon {
+  width: 60px;
+  height: 85px;
+  background-color: transparent;
+  background-image: url('img/closed.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 50px 50px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  appearance: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: fixed;
+  right: 30px;
+  top: 20px;
+  transition: .5s;
+  z-index: 99;
+}
+
+.modalwindow .closedicon:hover {
+  opacity: .5;
+}
+
+.modalwindow .closedicon span {
+  color: #ddd;
+  width: 100%;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin: 0;
+  padding: 0;
+}
+
+.modalwindow a {
+  color: #666;
+}
+
+.modalwindow a:hover {
+  text-decoration: none;
+}
+
+.modalwindow a.button {
+  font-size: 12pt;
+  width: 200px;
+  color: #eee;
+  padding: 10px 0;
+  display: block;
+  margin: 30px auto;
+  border: 1px solid #eee;
+  font-family: 'Comfortaa', cursive;
+  text-decoration: none;
+  text-align: center;
+  transition: .5s;
+}
+
+.modalwindow a.button:hover {
+  color: #555;
+  background-color: #eee;
+}
+
+.modalwindow .info {
+  font-size: 12.5pt;
+  line-height: 30pt;
+  letter-spacing: 1px;
+}
+
+.modalwindow .caution {
+  font-size: 10pt;
+  text-align: center;
+}

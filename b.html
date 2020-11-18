@@ -1,25 +1,66 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-  html, body { width: 100%; height: 100%; margin: 0; padding: 0; }
-  * { box-sizing: border-box; }
-</style>
-</head>
-<body style="text-align:center;">
-<div style="height:100%">
-  <div style="height:60px;">
-    header<span style="color:#ccc;">(60px)</span>
-  </div>
-  <div style="border:1px solid blue;height:calc((100% - 120px) / 2)">
-   BOX 1 <span style="color:#ccc;">(100% - 120px) / 2</span>
-  </div>
-  <div style="border:1px solid red;height:calc((100% - 120px) / 2)">
-   BOX 2 <span style="color:#ccc;">(100% - 120px) / 2</span>
-  </div>
-  <div style="height:60px;">
-   footer<span style="color:#ccc;">(60px)</span>
-  </div>
-</div>
-</body>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="test.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script type="text/javascript" src="script.js"></script>
+    <title>testingtesting</title>
+  </head>
+  <body>
+    <section id="modal1" class="modalwindow">
+      <button onclick="hide(1);" class="closedicon">
+        <span>閉じる</span>
+      </button>
+            <div class="swiper-container swiper1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/pic/pic1.png">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/pic/pic2.png">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/pic/pic3.png">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/pic/pic4.png">
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <h1>DATA</h1>
+      <p>Programmer/VB.NET 2013/HTML5/CSS3/Windows8 Tablet</p>
+      <h1>OUTLINE</h1>
+      <p>各種メニュー部分とモジュール結合、面接総合辞典の部分の製作を担当しました。</p>
+      <p>当初はストアアプリ形式での開発でしたが、途中で急遽通常のフォームアプリ形式の開発に変更となり、移植の作業が大変でした。</p>
+      <p>惜しくも優良賞という結果になりましたが、自分がはじめて携わった作品なので良き想い出のひとつです。</p>
+      <a href="https://github.com/KentoIkeda/the_interview_plus" class="button" target="_blank">source code</a>
+      <p class="caution">※担当工程箇所のみ配布しております。</p>
+      <p class="caution">※誠に恐れ入りますが、著作権等の都合上アプリケーションの直接配布やダウンロードのサービス等は行っておりません。</p>
+      <p class="caution">実際にお手を触れて確認したい際はお手数ですが「Contact」よりお問い合わせ下さい。</p>
+    </section>
+    </footer>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+            <script>
+            var mySwiper = new Swiper ('.swiper1', {
+    loop: true,
+    slidesPerView: 2,
+    spaceBetween: 10,
+    centeredSlides : true,
+    pagination: '.swiper-pagination',
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    breakpoints: {
+      767: {
+        slidesPerView: 1,
+        spaceBetween: 0
+      }
+    }
+  })
+      </script>
+  </body>
 </html>
