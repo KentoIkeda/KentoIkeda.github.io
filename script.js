@@ -78,13 +78,13 @@ function hide(num) {
   var m = document.getElementsByTagName("body")[0];
   m.style.overflow = "visible";
   var f = document.getElementById("modal" + num);
-  f.classList.remove('animate__zoomIn');
-  f.classList.add('animate__zoomOut');
+  f.classList.remove('animate__fadeIn');
+  f.classList.add('animate__fadeOut');
   setTimeout(() => {
     f.style.display = "none";
   }, 1000)
   setTimeout(() => {
-    f.classList.remove('animate__zoomOut');
-    f.classList.add('animate__zoomIn');
+    f.classList.remove('animate__fadeOut');
+    f.classList.add('animate__fadeIn');
   }, 1000)
 }

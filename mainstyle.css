@@ -231,7 +231,7 @@ color:#ddd;
 display:none;
 height:100vh;
 left:0;
-overflow-y:scroll;
+overflow-y:auto;
 padding:25px;
 position:fixed;
 top:0;
@@ -249,32 +249,25 @@ text-align:left;
 }
 
 .modalwindow .frameouter {
-height:100%;
-margin-top:10px;
+position: relative;
+width: 100%;
+background-color: red;
+}
+
+.modalwindow .frameouter:before{
+content:"";
+display: block;
+padding-top: 56.25%; /* 高さを幅の75%に固定 */
 }
 
 .modalwindow .frameouter iframe {
-display:block;
-height:100%;
-margin:auto;
-width:100%;
-}
-
-.modalwindow::-webkit-scrollbar {
-width:10px;
-}
-
-.modalwindow::-webkit-scrollbar-track {
-background:#fff;
-border:none;
-border-radius:10px;
-box-shadow:inset 0 0 2px #777;
-}
-
-.modalwindow::-webkit-scrollbar-thumb {
-background:#ccc;
-border-radius:10px;
-box-shadow:none;
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
 }
 
 .modalwindow .closedicon {
@@ -395,7 +388,7 @@ text-align:center;
 --animate-duration:2s;
 }
 
-.animate__animated.animate__fadeInUp,.animate__animated.animate__zoomIn,.animate__animated.animate__zoomOut {
+.animate__animated.animate__fadeInUp,.animate__animated.animate__fadeIn,.animate__animated.animate__fadeOut {
 --animate-duration:1s;
 }
 
