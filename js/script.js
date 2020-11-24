@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', (event) => {
+  document.getElementsByTagName('body')[0].style.overflow = 'hidden';
 	var ld = document.getElementById('loading');
-    ld.style.display = 'block';
-    document.getElementById('sts').innerText = 'Loading';
+  ld.style.display = 'block';
+  document.getElementById('sts').innerText = 'Loading';
 });
 
 window.onload = function() {
@@ -13,6 +14,7 @@ window.onload = function() {
 	setTimeout(() =>{
 		var ld = document.getElementById('loading');
 		ld.classList.add('animate__fadeOutRight');
+    document.getElementsByTagName('body')[0].style.overflow = 'visible';
 	}, 2000)
 
 	setTimeout(() => {
