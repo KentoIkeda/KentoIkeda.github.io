@@ -2,11 +2,7 @@
 
 ## ローカル開発環境構築
 
-<br>
-
 ### Windows環境
-
-<br>
 
 1.sailをダウンロード
 
@@ -21,6 +17,6 @@
 
 |<center>項目</center>|<center>変更前</center>|<center>変更後</center>|
 | ---- | ---- | ---- |
-|**DB_HOST**|127.0.0.1|<span style="color: red; ">**mysql**</span>|
-|**DB_PASSWORD**|(未設定)|<span style="color: red; ">**適当なパスワード**</span>|
-|**DB_USERNAME**|root|<span style="color: red; ">**sail**</span>|
+|**DB_HOST**|127.0.0.1|<span style="color: #ff0000; ">**mysql**</span>|
+|**DB_PASSWORD**|(未設定)|<span style="color: #ff0000; ">**適当なパスワード**</span>|
+|**DB_USERNAME**|root|<span style="color: #ff0000; ">**sail**</span>|
